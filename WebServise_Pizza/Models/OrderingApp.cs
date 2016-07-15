@@ -13,6 +13,7 @@ namespace WebServise_Pizza.Models
             db.Orders.Add(new Order { Name = "Товар1", Adress = "Адрес 1"});
             db.Orders.Add(new Order { Name = "Товар2", Adress = "Адрес 2"});
             db.Orders.Add(new Order { Name = "Товар3", Adress = "Адрес 3"});
+            db.Orders.Add(new Order { Name = "Товар4", Adress = "Адрес 4" });
 
             base.Seed(db);
         }

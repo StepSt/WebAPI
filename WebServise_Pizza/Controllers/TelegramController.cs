@@ -38,7 +38,8 @@ namespace WebServise_Pizza.Controllers
                 switch (update.message.text)
                 {
                     case "1":
-                        db.Orders.Add(new Order { Name = "Товар11", Adress = "Адрес 11" });
+                        db.Orders.Add(new Order{Name = "Товар11",Adress = "Адрес 1"});
+                        db.SaveChanges();
                         bot.SendTextMessageAsync(update.message.chat.id, "Заказ Товара 1 на Адрес 1 отправлен исполнителю");
                         break;
            //        case "1":
